@@ -1,0 +1,7 @@
+BlackJack.egg-info
+blackjack/__pycache__*
+tests/__pycache__*
+venv
+.eggs
+.cache
+*~
