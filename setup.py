@@ -1,6 +1,9 @@
 from setuptools import setup
 
-install_requires = []
+install_requires = [
+    'msgpack-python',
+    'aiozmq'
+    ]
 
 tests_requires = [
     'mock',
