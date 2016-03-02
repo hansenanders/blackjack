@@ -1,24 +1,5 @@
 from . import deck
 
-def calc_score(hand):
-    def get_value(v):
-        if v > 10 and v < 14:
-            return 10
-        elif v == 14:
-            return 11
-        else:
-            return v
-
-    retval = 0
-    aces = 0
-    for card in hand:
-        v = get_value(card)
-        retval += v
-        if v == 11:
-            aces += 1
-    if  retval > 21 and aces != 0:
-        retval -= 10*aces
-    return retval
 
 class BlackJack(object):
     def __init__(self, _deck=None):
